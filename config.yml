@@ -2,8 +2,13 @@
 streamlit:
   title: "Applied AI team's bot"
   tab_title: "LLM bot"
-  # logo: "./streamlit_app/images/Microsoft_logo.png"
-  # page_icon: "./streamlit_app/images/Microsoft_logo.png"
-  # avatar: "./streamlit_app/images/openai.png"
   assistant_intro_message: "สวัสดีค่ะ อาการวันนี้ของคุณเป็นอย่างไรบ้าง" 
   about: "this is a demo bot, author: Applied AI team"
+---
+server:
+  port: 8000
+  headless: true
+  enableCORS: false
+  enableXsrfProtection: false
+  enableWebsocketCompression: false
+  address: "0.0.0.0"
