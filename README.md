@@ -1,70 +1,58 @@
-<h1 align="center">🔥 Python Chatbot with Streamlit and OpenAI 🔥</h1>
+# Medical Chat Bot using Streamlit and Typhoon
 
-<p align="center">
-  <img src="output.png" alt="Chatbot Preview" width="500">
-</p>
+This is a simple Python application that creates a chatbot powered by the GPT-3.5 model using the Streamlit framework for the user interface. The chatbot can engage in conversations and answer questions based on the user's input. 
 
-<p align="center">
-  Unleash the Power of Conversational AI with this amazing Python chatbot project built using Streamlit and OpenAI! 💬🚀
-</p>
+## Prerequisites
 
-<p align="center">
-  🌟 GitHub Repository: https://github.com/CodingCraftYT/chatbot-streamlit-openai 🌟<br>
-  🔐 OpenAI API Key: https://platform.openai.com/account/api-keys 🔐
-</p>
+Before you can run this chatbot, make sure you have the following prerequisites installed:
 
-## Overview
+You can install the required libraries using `pip`:
 
-This repository provides a step-by-step guide to building an intelligent Python chatbot using Streamlit and OpenAI. The chatbot is designed to deliver a seamless conversational experience with its natural language processing capabilities. With a visually appealing interface powered by Streamlit, your users will be engaged like never before! 💡🗣️
-
-## Features
-
-✨ Interactive Interface: Utilize Streamlit's sleek design to create a visually appealing chatbot experience.
-🧠 Natural Language Processing: Enable intelligent responses and context handling for realistic conversations.
-⚙️ Easy Integration: Integrate the powerful OpenAI API effortlessly for enhanced chatbot capabilities.
+```bash
+pip install -r requirements.txt
+```
 
 ## Getting Started
 
-To get started with the Python chatbot project, follow these simple steps:
+1. Clone the repository or create a new project directory for this chatbot.
 
-1. Clone the repository: `git clone https://github.com/CodingCraftYT/chatbot-streamlit-openai`
-2. Install the required dependencies: `pip install -r requirements.txt`
-3. Obtain an OpenAI API key: [https://platform.openai.com/account/api-keys]
-4. Configure the API key: [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]
-5. Launch the chatbot application: `streamlit run chatbot.py`
+2. Inside your project directory, create a folder named `streamlit`. This folder will contain the `secrets.toml` file where you'll store your OpenAI API key.
 
-## Example Usage
+3. Obtain an OpenAI API key and place it in the `secrets.toml` file as follows:
 
-```python
-import streamlit as st
-import openai
+    ```toml
+    # secrets.toml
+    TYPHOON_API_KEY = "XXXXX"
+    ```
 
-# Insert code snippets and usage examples here
+4. Create a Python script (e.g., `app.py`) and paste the provided code into this script.
 
-st.title("Python Chatbot with Streamlit and OpenAI")
-# Insert chatbot implementation code here
+5. Run the chatbot application using the following command:
 
-Contributing
-Contributions are welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. Let's collaborate to make this Python chatbot project even better! 🙌🎉
+    ```bash
+    streamlit run app.py
+    ```
 
-License
-This project is licensed under the MIT License. Feel free to use, modify, and distribute it as per the license terms.
+## How to Use
 
-Contact
-If you have any questions or need further assistance, feel free to reach out:
+1. Upon running the application, a Streamlit interface will open in your web browser.
 
-📧 Email: paliwalm4321@gmail.com
-🎥 Youtube: https://youtu.be/Q10QlwN-LxE
+2. You will see a chat interface with a message input box labeled "What is up?"
 
-Happy Chatbot Building! 🤖💬
+3. Start a conversation by typing a message in the input box and pressing Enter.
 
-css
-Copy code
+4. The chatbot will respond to your message, and the conversation will continue. You can ask questions or have a general chat with the bot.
 
-Feel free to customize it further based on your specific project details and contact information.
+5. The conversation history will be displayed in the chat interface, with user and assistant messages shown.
 
-Watch the Tutorial: [Python Chatbot using Streamlit and OpenAI] https://youtu.be/Q10QlwN-LxE
+6. The chatbot is powered by the GPT-3.5 model, and it can provide responses based on the context of the conversation.
 
+7. To stop the chatbot, simply close the Streamlit interface or the terminal where it's running.
 
+## Customization
 
+- You can customize the chatbot's behavior by modifying the GPT-3.5 model settings or adding additional logic to handle specific user inputs.
 
+- You can also add more conversation messages or prompts in the code to make the chatbot respond to various queries and topics.
+
+Enjoy using your Chat Bot powered by GPT-3.5! Feel free to enhance and customize it further to suit your specific needs and requirements.
