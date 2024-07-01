@@ -4,11 +4,3 @@ streamlit:
   tab_title: "LLM bot"
   assistant_intro_message: "สวัสดีค่ะ อาการวันนี้ของคุณเป็นอย่างไรบ้าง" 
   about: "this is a demo bot, author: Applied AI team"
----
-server:
-  port: 8000
-  headless: true
-  enableCORS: false
-  enableXsrfProtection: false
-  enableWebsocketCompression: false
-  address: "0.0.0.0"
